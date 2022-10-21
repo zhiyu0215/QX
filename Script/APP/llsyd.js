@@ -12,7 +12,7 @@ TG频道群：https://t.me/gjwj6
 
 [rewrite_local]
 
-^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ url script-response-body 
+^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ url script-response-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/APP/llsyd.js
 
 
 [mitm] 
