@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > NoMo Cam 解锁订阅
-^https?:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_verify$ url script-request-body 
+^https?:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_verify$ url script-request-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/APP/NoMoCamProCrack.js
 
 [mitm] 
 hostname = nomo.dafork.com
