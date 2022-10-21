@@ -12,8 +12,7 @@
 *******************************
 [rewrite_local]
 # > 69传媒解锁会员
-^https?:\/\/tu5\.twittme\.net\/cms\/api\/app\/article\/play url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/69MediaCrack.js
-
+^https?:\/\/tu5\.twittme\.net\/cms\/api\/app\/article\/play url script-response-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/FL_APP/69MediaCrack.js
 [mitm] 
 hostname = tu5.twittme.net
 
