@@ -15,7 +15,7 @@ TG频道群：https://t.me/gjwj6
 
 [rewrite_local]
 
-^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/Crack_APP/documents.js
+^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/Unlock_APP/documents.js
 
 [mitm] 
 
