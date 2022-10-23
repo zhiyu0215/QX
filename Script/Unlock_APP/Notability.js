@@ -7,5 +7,5 @@
 #第五步：同步以后，永久解锁，无论卸载安装，支持最新版本，以及老版本
 
 [rewrite_local]
-^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/gjwj666/jichang/main/Notability.js
+^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/Unlock_APP/Notability.js
 hostname = notability.com
