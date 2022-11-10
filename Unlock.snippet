@@ -1,0 +1,750 @@
+***************************************
+
+#IOS软件解锁订阅脚本
+#整理时间：2022.11.4
+#已解锁订阅软件：documents文件管理器,gear浏览器插件,https抓包,PrettyUp视频美化,Noted-录音笔记,XMind思维导图,文件管理器,old roll复古相机,Picsew滚动截图,Grow - 你的健康,VSCO:照片编辑,图图记账,Pandora-管理你的订阅,Apollo-记录你的影视生活,白云天气-感知自然呼吸,MoneyThings—记账,熊掌记- Markdown,谜底时钟,Fin -预算与开销追踪,Sorteds - 日历,目标地图,Planny • 智能待办,TopWidgets-小组件,Pillow： 睡眠周期跟踪器,PDF—Expert点睛,拼图酱,Symbolab计算器,音频剪辑提取,EFEKT美易一视频特效,photoGrid-照片拼图,MX滤镜大师,网速测试大师,Pixelance Al照片修复,印章生成器,米克锁屏,全能小组件- Quike,vision-个人OKR目标,Memrise跟忆术家学语言,Fabulous每日动力泉源,iranslate 翻译,极速扫描仪,奇妙组件,卡片日记,马卡龙玩图,色采 -配色助手,percento-轻松管理你的资产,Retake-Al照片修复,WidgetArt-自定义桌面小组件,Spark Mail-智能邮箱,手机硬件管家,航旅追踪,音频剪辑- 音乐剪辑大师,Noto 笔记,私密相册管家,AAnybox -跨平台书签管理,Lingokids 儿童英语,CAD快速看图,7分钟HIT运动,Craft - 文件及笔记编辑器,Effie - 沉浸写作,FitnessView•健康仪表板,Day One 日记＋笔记,不咕剪辑,天天豆 - 最简单的日记,Ego Reader - RSS阅读器,克拉壁纸,AAnybox -跨平台书签管理,NoMo Cam,Notability,1blocker,Pixelmator Photo,Launch Center Pro,Lr Adobe Lightroom,Scanner Pro,fileball,Panda Widget,Focos,Not Boring,Colorful—Widget,Widgetsmith,LovepDF-PDF,APTV,Nicegram: Unlimited Text,Color Widgets,Motivation-Daily quotes,Usage: System,PDF Viewer Pro,CARROT Weather,Drafts,Agenda,Anki Note.
+#新增：Proknockout扣图神器
+***************************************
+
+[MITM]
+hostname = buy.itunes.apple.com,api.revenuecat.com,license.pdfexpert.com,nomo.dafork.com,notability.com,api.craft.do,subscription-api.notedapp.io,www.xmind.cn,photos.adobe.io,app-measurement.com,api.sortedapp.com,top-widgets-api.xiaozujian.comlicense.pdfexpert.com,scibug.com,api-weather.andy.works,fufei.fengyunsoft.cn,api.apphud.com,pgapi.ksmobile.com,bmall.camera360.com,iap.etm.tech,shared.lc-cn-n1-shared.com,service.ilovepdf.com,api.memrise.com,ssl-api.itranslateapp.com,restore-access.indream.app,scanner.jianse.tv,app.api.versa-ai.com,api.lingokids.com,carrotweather.herokuapp.com,api.sevenworkouts.com,backend.getdrafts.com,api.effie.pro,dayone.app,accounts.agenda.com,api.pxmage.com
+
+Proknockout扣图神器+解锁VIP
+下载地址：http://mtw.so/6rugdA
+软件版本：7.12
+脚本作者：彭于晏💞
+更新时间：2022-11-4
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Proknockout.js
+#hostname = buy.itunes.apple.com
+
+documents文件管理器+解锁订阅
+下载地址：https://is.gd/DLjoIn
+软件版本：v8.2.3
+脚本作者：彭于晏💞
+更新时间：2022-10-20
+^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js
+#hostname = license.pdfexpert.com
+
+#NoMo Cam 解锁订阅
+#软件版本：1.5.131
+#更新时间：2022-09-26
+^https?:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_verify$ url script-request-body https://raw.githubusercontent.com/zhiyu0215/QX/main/Script/Unlock_APP/NoMoCamPro.js
+#hostname = nomo.dafork.com
+
+Notability +解锁订阅
+下载地址：http://mtw.so/6bQodv
+特别说明：老版本解锁，然后同步新版本，
+软件版本：11.7.1
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js
+#hostname = notability.com
+
+#gear浏览器插件+解锁订阅
+#下载地址：http://mtw.so/64tULY
+#软件版本：5.8.5
+#脚本作者：彭于晏
+#更新时间：2022-9-18
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gear.js
+#hostname = api.revenuecat.com
+
+https抓包+解锁订阅
+软件版本：v2.2.2
+脚本作者：彭于晏
+更新时间：2022-9-1
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
+#hostname = buy.itunes.apple.com
+
+PrettyUp视频美化+解锁订阅
+下载地址：http://mtw.so/6rpHwa
+软件版本：5.2
+脚本作者：彭于晏
+更新时间：2022-9-1
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/upp.js
+#hostname = buy.itunes.apple.com
+
+Noted-录音笔记+解锁订阅
+下载地址：http://mtw.so/5XgNfB
+软件版本：3.6.10
+脚本作者：彭于晏
+更新时间：2022-9-2
+^https:\/\/subscription-api\.notedapp\.io\/api\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/noteb.js
+#hostname = subscription-api.notedapp.io
+
+XMind思维导图+解锁订阅
+下载地址：http://mtw.so/64S2u0
+软件版本：3.2.10
+脚本作者：彭于晏
+更新时间：2022-9-2
+^https:\/\/www\.xmind\.cn\/_res\/devices url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xmind.js
+#hostname = www.xmind.cn
+
+文件管理器+解锁订阅
+下载地址：http://mtw.so/6ckG8D
+软件版本：1.0.5
+脚本作者：彭于晏
+更新时间：2022-9-3
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wjglq.js
+#hostname = buy.itunes.apple.com
+
+1blocker+解锁订阅
+下载地址：http://mtw.so/6c0tK5
+软件版本：5.2.5
+脚本作者：彭于晏
+更新时间：2022-9-19
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/blocker.js
+#hostname = api.revenuecat.com
+
+old roll复古相机+解锁订阅
+下载地址：http://mtw.so/64PxcA
+软件版本：4.2.1
+脚本作者：彭于晏
+更新时间：2022-9-3
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/old.js
+#hostname = buy.itunes.apple.com
+
+Picsew滚动截图+解锁订阅
+下载地址：http://mtw.so/5AOWu4
+软件版本：3.8.6
+脚本作者：彭于晏
+更新时间：2022-9-2
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
+#hostname = buy.itunes.apple.com
+
+Pixelmator Photo+解锁订阅
+下载地址：http://mtw.so/6jcEqo
+软件版本：2.0.14
+脚本作者：彭于晏
+更新时间：2022-9-4
+https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pixelmator.js
+#hostname= api.revenuecat.com
+
+Launch Center Pro+解锁订阅
+下载地址：http://mtw.so/6rx8ZM
+软件版本：3.2.7
+脚本作者：彭于晏
+更新时间：2022-9-6
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/pro.js
+#hostname = buy.itunes.apple.com
+
+Grow - 你的健康+恢复订阅
+下载地址：http://u6v.cn/5IrhMX
+软件版本：1.7.1
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Grow.js
+#hostname = api.revenuecat.com
+
+VSCO:照片编辑+恢复订阅
+下载地址：http://u6v.cn/5IrSrn
+软件版本：285.0
+脚本作者：彭于晏
+更新时间：2022-9-8
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vsco.js
+#hostname = api.revenuecat.com
+
+图图记账+恢复订阅
+下载地址：http://u6v.cn/5XtW8F
+软件版本：2.4.4
+脚本作者：彭于晏
+更新时间：2022-9-8
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ttjz.js
+#hostname = api.revenuecat.com
+
+Lr Adobe Lightroom+解锁订阅
+下载地址：https://is.gd/UEAk0n
+软件版本：7.5.2
+脚本作者：彭于晏💞
+更新时间：2022-9-30
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lightroom.js
+#hostname = photos.adobe.io
+
+Pandora-管理你的订阅+恢复订阅
+下载地址：http://u6v.cn/6qQd2t
+软件版本：2.0.3
+脚本作者：彭于晏
+更新时间：2022-9-10
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pandora.js
+#hostname = buy.itunes.apple.com
+
+Apollo-记录你的影视生活
+下载地址：http://mtw.so/6jr2E8
+软件版本：1.1.1
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+全家桶可以解锁
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Apollo.js
+#hostname = api.revenuecat.com
+
+白云天气-感知自然呼吸+解锁订阅
+使用教程：如果不行解锁：点击免费试用，卸载在开启规则
+下载地址：http://mtw.so/6jqFa0
+软件版本：1.31
+脚本作者：彭于晏
+更新时间：2022-9-11
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bytq.js
+#hostname = api.revenuecat.com
+
+MoneyThings—记账+解锁订阅
+下载地址：http://mtw.so/6rEaBQ
+软件版本：9.3.3
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/MoneyThings.js
+#hostname = api.revenuecat.com
+
+Scanner Pro+解锁订阅
+下载地址：http://mtw.so/6bRcSt
+软件版本：8.10
+脚本作者：彭于晏
+更新时间：2022-9-11
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Scanner.js
+#hostname = api.revenuecat.com
+
+熊掌记- Markdown+解锁订阅
+下载地址：http://mtw.so/6bTERH
+软件版本：1.9.7
+脚本作者：彭于晏
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzj.js
+#hostname = buy.itunes.apple.com
+
+fileball+解锁订阅
+下载地址：美区——国区
+软件版本：1.2.7
+脚本作者：彭于晏
+更新时间：2022-10-25
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
+#hostname = api.revenuecat.com, app-measurement.com
+
+谜底时钟 +解锁订阅，可以解锁全家桶💞
+下载地址：http://mtw.so/6rOKQW
+软件版本：2.18.1
+脚本作者：彭于晏
+更新时间：2022-9-19
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mdsz.js
+#hostname = api.revenuecat.com
+
+Fin -预算与开销追踪+解锁订阅
+下载地址：http://mtw.so/5PAabM
+软件版本：4.0.1
+脚本作者：彭于晏
+更新时间：2022-9-21
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fin.js
+#hostname = api.revenuecat.com
+
+Sorteds - 日历+解锁订阅
+下载地址：http://mtw.so/6c4TCf
+软件版本：3.9.1
+脚本作者：彭于晏
+更新时间：2022-9-21
+^https:\/\/api\.sortedapp\.com\/receipts\/verify url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Sorted.js
+#hostname = api.sortedapp.com
+
+目标地图+解锁订阅
+下载地址：https://apps.apple.com/cn/app/%E7%9B%AE%E6%A0%87%E5%9C%B0%E5%9B%BE-%E4%B8%AA%E4%BA%BA%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/id1555022550
+软件版本：2.21.3
+脚本作者：彭于晏
+更新时间：2022-9-22
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mbdt.js
+#hostname = api.revenuecat.com
+
+Panda Widget+解锁订阅
+下载地址：https://apps.apple.com/cn/app/panda-widget-%E6%A1%8C%E9%9D%A2%E5%B0%8F%E7%BB%84%E4%BB%B6/id1569291816
+软件版本：2.1.0
+脚本作者：彭于晏
+更新时间：2022-9-22
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/pandavip.js
+#hostname = buy.itunes.apple.com
+
+Planny • 智能待办+解锁订阅
+下载地址：https://is.gd/pYBe5t
+软件版本：7.1.5
+脚本作者：彭于晏
+更新时间：2022-9-24
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Planny.js
+#hostname = api.revenuecat.com
+
+TopWidgets-小组件+解锁订阅
+下载地址：https://is.gd/eoqPq2
+软件版本：3.7.6
+脚本作者：彭于晏
+更新时间：2022-9-24
+^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgets.js
+#hostname = top-widgets-api.xiaozujian.com
+
+Pillow： 睡眠周期跟踪器+解锁订阅
+下载地址：https://is.gd/X3FiFg
+软件版本：4.9
+脚本作者：彭于晏
+更新时间：2022-9-26
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pillow.js
+#hostname = api.revenuecat.com
+
+PDF—Expert点睛+解锁订阅
+下载地址：https://is.gd/oYx3kv
+软件版本：v7.11.0
+脚本作者：彭于晏
+更新时间：2022-9-27
+^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/pdfexpert6\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
+#hostname = license.pdfexpert.com
+
+拼图酱+解锁订阅
+下载地址：https://is.gd/WkX77N
+软件版本：2.9.21
+脚本作者：彭于晏
+更新时间：2022-9-28
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ptj.js
+#hostname = buy.itunes.apple.com
+
+Focos+解锁订阅
+下载地址：https://is.gd/vpRvsM
+软件版本：5.5.14
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Focos.js
+#hostname = buy.itunes.apple.com
+
+Symbolab计算器 +解锁订阅
+下载地址：https://is.gd/zbDsaa
+软件版本：9.6.13
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https?:\/\/scibug\.com\/appleSubscriptionValidate$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Symbolab.js
+#hostname = scibug.com
+
+Not Boring +解锁订阅
+特别通知：可以解锁全家桶！四件套💓
+下载地址：https://is.gd/LGpKsj
+软件版本：2.7
+脚本作者：彭于晏💞
+更新时间：2022-9-29
+^https?:\/\/api-weather\.andy\.works\/v\d\/\w{18}$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/NotBoring.js
+#hostname = api-weather.andy.works
+
+音频剪辑提取+解锁订阅
+下载地址：https://is.gd/uXIeZO
+软件版本：2.0.6
+脚本作者：彭于晏💞
+更新时间：2022-9-30
+^https:\/\/fufei\.fengyunsoft\.cn\/api\/client\/info url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ypjjtq.js
+#hostname = fufei.fengyunsoft.cn
+
+EFEKT美易一视频特效+解锁订阅
+下载地址：https://is.gd/HS2WLP
+软件版本：5.3
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/api\.apphud\.com\/v1\/subscriptions url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/EFEKT.js
+#hostname = api.apphud.com
+
+photoGrid-照片拼图+解锁订阅
+下载地址：https://is.gd/BuImL6
+特别通知：需要试用一次才可以解锁！
+软件版本：8.4.02
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/pgapi\.ksmobile\.com\/v1\/ios\/auth url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/photoGrid.js
+#hostname = pgapi.ksmobile.com
+
+MX滤镜大师+解锁订阅
+下载地址：https://is.gd/PCaWgW
+软件版本：5.2.15
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+https?:\/\/bmall\.camera360\.com\/api\/mix\/recovery url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/MIX.js
+#hostname = bmall.camera360.com
+
+网速测试大师+解锁订阅
+下载地址：https://is.gd/yQ8iFu
+软件版本：2.65.0
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/iap\.etm\.tech\/receipts url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wscsds.js
+#hostname = iap.etm.tech
+
+Pixelance Al照片修复+解锁订阅
+下载地址：https://is.gd/jdWRxe
+软件版本：1.1.1
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/iap\.etm\.tech\/receipts url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pixelance.js
+#hostname = iap.etm.tech
+
+印章生成器+解锁订阅
+下载地址：https://is.gd/neA2XY
+软件版本：2.0.0
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yzscq.js
+#hostname = buy.itunes.apple.com
+
+米克锁屏+解锁订阅
+下载地址：https://is.gd/RZKjWo
+软件版本：1.1.1
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mksp.js
+#hostname = buy.itunes.apple.com
+
+全能小组件- Quike+解锁订阅
+下载地址：https://is.gd/Vqtf83
+软件版本：7.3
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/shared\.lc-cn-n1-shared\.com\/1\.1\/classes\/Users url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Quike.js
+#hostname = shared.lc-cn-n1-shared.com
+
+Colorful—Widget+解锁订阅
+下载地址：https://is.gd/5nkGAB
+软件版本：5.7.3
+脚本作者：彭于晏💞
+更新时间：2022-10-1
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ColorfulWidget.js
+#hostname = buy.itunes.apple.com
+
+Widgetsmith+解锁订阅
+特别说明：可以解锁全家桶💞
+下载地址：https://is.gd/y0RMsS
+软件版本：4.0.4
+脚本作者：彭于晏💞
+更新时间：2022-10-2
+https://api.revenuecat.com/v1/(receipts|subscribers)/* url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/widgetSmith.js
+#hostname = api.revenuecat.com
+
+LovepDF-PDF+解锁订阅
+下载地址：https://is.gd/yTNaH0
+软件版本：3.1.9
+脚本作者：彭于晏💞
+更新时间：2022-10-2
+https://service.ilovepdf.com/v1/user url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lovePdf.js
+#hostname = service.ilovepdf.com
+
+vision-个人OKR目标+解锁订阅
+下载地址：https://is.gd/X7S0eg
+软件版本：3.3.13
+脚本作者：彭于晏💞
+更新时间：2022-10-02
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vision.js
+#hostname = api.revenuecat.com
+
+APTV+解锁订阅
+下载地址：https://is.gd/inlPLD
+软件版本：1.0.10
+脚本作者：彭于晏💞
+更新时间：2022-10-02
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aptv.js
+#hostname = buy.itunes.apple.com
+
+Memrise跟忆术家学语言+解锁订阅
+下载地址：https://is.gd/NK2Knm
+软件版本：2022.9.26
+脚本作者：彭于晏💞
+更新时间：2022-10-4
+^https:\/\/api\.memrise\.com\/v1\.18 url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Memrise.js
+#hostname = api.memrise.com
+
+Fabulous每日动力泉源+解锁订阅
+下载地址：https://is.gd/nTyIZy
+软件版本：1.42.7
+脚本作者：彭于晏💞
+更新时间：2022-10-5
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fabulous.js
+#hostname = buy.itunes.apple.com
+
+iranslate 翻译+解锁订阅
+下载地址：https://is.gd/4QGRR6
+特别说明：如不能解锁，必须试用一次即可！
+软件版本：15.0.1
+脚本作者：彭于晏
+更新时间：2022-10-11
+https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios url script-request-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/iTranslate.js
+#hostname = ssl-api.itranslateapp.com
+
+Nicegram: Unlimited Text+解锁订阅
+下载地址：https://is.gd/7OPpId
+软件版本：1.1.2
+脚本作者：彭于晏💞
+更新时间：2022-10-8
+https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} url echo-response text/json echo-response https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Nicegram.js
+#hostname=restore-access.indream.app
+
+极速扫描仪+解锁订阅
+下载地址：https://is.gd/898e5E
+软件版本：1.7.7
+脚本作者：彭于晏💞
+更新时间：2022-10-9
+^https:\/\/scanner\.jianse\.tv\/api\/users\/loginUser url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/jssmy.js
+#hostname = scanner.jianse.tv
+
+奇妙组件+解锁订阅
+下载地址：https://is.gd/jKwCFE
+软件版本：3.0
+脚本作者：彭于晏💞
+更新时间：2022-10-10
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/qmzj.js
+#hostname = api.revenuecat.com
+
+卡片日记+解锁订阅
+下载地址：https://is.gd/CXisVr
+软件版本：10.2.0
+脚本作者：彭于晏💞
+更新时间：2022-10-10
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/kprj.js
+#hostname = buy.itunes.apple.com
+
+Color Widgets+解锁订阅
+下载地址：https://is.gd/T4slSZ
+软件版本：4.0.1
+脚本作者：彭于晏💞
+更新时间：2022-10-10
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ColorWidgets.js
+#hostname = api.revenuecat.com
+
+马卡龙玩图 +解锁订阅
+下载地址：https://is.gd/glEzt3
+软件版本：5.4.8
+脚本作者：彭于晏💞
+更新时间：2022-10-10
+https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mklwt.js
+#hostname = app.api.versa-ai.com
+
+色采 -配色助手+解锁订阅
+下载地址：https://is.gd/G3Dw6r
+软件版本：2.6.7
+脚本作者：彭于晏💞
+更新时间：2022-10-12
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sc.js
+#hostname = buy.itunes.apple.com
+
+percento-轻松管理你的资产+解锁订阅
+下载地址：https://is.gd/ehnSv5
+软件版本：3.5.0
+脚本作者：彭于晏💞
+更新时间：2022-10-12
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/percento.js
+#hostname = api.revenuecat.com
+
+Retake-Al照片修复+解锁订阅
+下载地址：https://is.gd/Q0z2vn
+软件版本：1.0.2
+脚本作者：彭于晏💞
+更新时间：2022-10-12
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Retake.js
+#hostname = buy.itunes.apple.com
+
+Motivation-Daily quotes+解锁订阅
+下载地址：https://is.gd/h9X9pD
+软件版本：4.32.1
+脚本作者：彭于晏💞
+更新时间：2022-10-12
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Motivation.js
+#hostname = buy.itunes.apple.com
+
+WidgetArt-自定义桌面小组件+恢复订阅
+下载地址：https://is.gd/vGKkBx
+软件版本：2.4.4
+脚本作者：彭于晏💞
+更新时间：2022-10-12
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/WidgetArt.js
+#hostname = api.revenuecat.com
+
+Usage: System+解锁订阅
+下载地址：https://is.gd/6MRVNT
+软件版本：4.18.2
+脚本作者：彭于晏💞
+更新时间：2022-10-13
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Usage.js
+#hostname = api.revenuecat.com
+
+PDF Viewer Pro+解锁订阅
+下载地址：https://is.gd/PAWYmn
+软件版本：6.1.9
+脚本作者：彭于晏💞
+更新时间：2022-10-13
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFViewer.js
+#hostname = api.revenuecat.com
+
+Spark Mail-智能邮箱+解锁订阅
+下载地址：https://is.gd/pInkcM
+软件版本：3.0
+脚本作者：彭于晏💞
+更新时间：2022-10-13
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/SparkMail.js
+#hostname=api.revenuecat.com
+
+手机硬件管家+解锁订阅
+下载地址：https://is.gd/EjvJR6
+软件版本：5.1.4
+脚本作者：彭于晏💞
+更新时间：2022-10-13
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/sjyjgj.js
+#hostname=api.revenuecat.com
+
+航旅追踪+解锁订阅
+下载地址：https://is.gd/yshCqR
+软件版本：4.4.12
+脚本作者：彭于晏💞
+更新时间：2022-10-13
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hlzz.js
+#hostname=api.revenuecat.com
+
+音频剪辑- 音乐剪辑大师+解锁订阅
+下载地址：https://is.gd/8aDLVe
+软件版本：1.1.34
+脚本作者：彭于晏💞
+更新时间：2022-10-14
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ypjj.js
+#hostname = buy.itunes.apple.com
+
+Noto 笔记+解锁订阅
+下载地址：https://is.gd/R4hqR6
+软件版本：3.4.3
+脚本作者：彭于晏💞
+更新时间：2022-10-14
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/noto.js
+#hostname = api.revenuecat.com
+
+私密相册管家+解锁订阅
+下载地址：https://is.gd/p5LZUT
+软件版本：3.3
+脚本作者：彭于晏💞
+更新时间：2022-10-15
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smxcgj.js
+#hostname = buy.itunes.apple.com
+
+AAnybox -跨平台书签管理+解锁订阅
+下载地址：https://is.gd/DylUak
+软件版本：1.11.1
+脚本作者：彭于晏💞
+更新时间：2022-10-15
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(.*?)*$) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/AAnybox.js
+#hostname = api.revenuecat.com
+
+Lingokids 儿童英语+解锁订阅
+下载地址：https://is.gd/q98FZq
+软件版本：7.101.0
+脚本作者：彭于晏💞
+更新时间：2022-10-15
+^https:\/\/api\.lingokids\.com\/v1\/renovate_session url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingokids.js
+#hostname = api.lingokids.com
+
+CAD快速看图+解锁订阅
+下载地址：https://is.gd/P4A28x
+软件版本：3.0
+脚本作者：彭于晏💞
+更新时间：2022-10-16
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/CDAkskt.js
+#hostname = buy.itunes.apple.com
+
+CARROT Weather+解锁订阅
+下载地址：https://is.gd/1Ji73k
+软件版本：5.8.2
+脚本作者：彭于晏💞
+更新时间：2022-10-17
+^https:\/\/carrotweather\.herokuapp\.com\/parse\/functions\/findSubscriptionsForUserId url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/CARROTWeather.js
+#hostname = carrotweather.herokuapp.com
+
+7分钟HIT运动+解锁订阅
+下载地址：https://is.gd/SFUvPw
+软件版本：9.17.6
+脚本作者：彭于晏💞
+更新时间：2022-10-20
+^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases url reject
+^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/ url reject
+^https:\/\/api\.sevenworkouts\.com\/api\/v(\d)\/(verify-purchases|account/verify-purchases) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Seven.js
+#hostname = api.sevenworkouts.com
+
+Drafts——解锁订阅
+下载地址：https://is.gd/jpkxDc
+软件版本：33.0.2
+脚本作者：彭于晏💞
+更新时间：2022-10-20
+^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Drafts.js
+#hostname = backend.getdrafts.com
+
+Craft - 文件及笔记编辑器——解锁订阅
+下载地址：https://is.gd/ngDZcJ
+软件版本：2.3.6
+脚本作者：彭于晏💞
+更新时间：2022-10-20
+^https:\/\/api\.craft\.do\/auth\/v2\/profile url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Craft.js
+#hostname = api.craft.do
+
+Effie - 沉浸写作——解锁订阅
+下载地址：https://is.gd/GD6D7z
+软件版本：2.2.6
+脚本作者：Eric💞
+更新时间：2022-10-20
+^https://api.effie.pro/api/v1/user/member url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/effie.js
+#hostname = %APPEND% api.effie.pro
+
+FitnessView•健康仪表板—解锁订阅
+下载地址：https://is.gd/ngDZcJ
+软件版本：2.1.4
+脚本作者：彭于晏💞
+更新时间：2022-10-21
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/FitnessView.js
+#hostname = buy.itunes.apple.com
+
+Day One 日记＋笔记——解锁订阅
+下载地址：https://is.gd/mt4BxG
+软件版本：7.18.2
+脚本作者：彭于晏💞
+更新时间：2022-10-22
+https://dayone.app/api/v2/users/(receipt|account-status) url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dayone.js
+#hostname = dayone.app
+
+不咕剪辑+解锁订阅
+下载地址：https://is.gd/9BBDBq
+软件版本：2.1.401
+脚本作者：彭于晏💞
+更新时间：2022-10-22
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bgjj.js
+#hostname = buy.itunes.apple.com
+
+Agenda.+解锁订阅
+下载地址：https://is.gd/NxBCuE
+软件版本：15.0.1
+脚本作者：彭于晏💞
+更新时间：2022-10-23
+^https:\/\/accounts\.agenda\.com\/users\/.*\/license url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Agenda.js
+#hostname = accounts.agenda.com
+
+天天豆 - 最简单的日记——解锁订阅
+下载地址：https://is.gd/9UZZnc
+软件版本：2.7.9
+脚本作者：彭于晏💞
+更新时间：2022-10-23
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ttd.js
+#hostname = api.revenuecat.com
+
+Ego Reader - RSS阅读器+解锁订阅
+下载地址：https://is.gd/jK1kaa
+软件版本：4.3.9
+脚本作者：彭于晏💞
+更新时间：2022-10-26
+^https?:\/\/api\.pxmage\.com\/egoreader\/user\/info url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ego.js
+#hostname = api.pxmage.com
+
+克拉壁纸+解锁订阅
+下载地址：https://is.gd/NwXNnb
+软件版本：7.5.0
+脚本作者：彭于晏💞
+更新时间：2022-11-2
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/KLBZ.js
+#hostname = buy.itunes.apple.com
+
+Anki Note解锁永久订阅
+软件版本：2.11.2
+下载地址：http://t.cn/A6oTR5RT
+脚本作者：Hausd0rff
+更新时间：2022-11-02
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/AnkiNoteProCrack.js
+#hostname = buy.itunes.apple.com
+
+AAnybox -跨平台书签管理+解锁订阅
+更新时间：2022-11-03
+下载地址：https://is.gd/DylUak
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/AAnybox.js
+#hostname = api.revenuecat.com
